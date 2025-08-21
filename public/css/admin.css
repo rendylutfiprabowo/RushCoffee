@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word; /* Mencegah teks meluap */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Inter */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Hindari margin bawaan */
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #0757be, #021744);
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px;
+}
+
+.brand-link img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.brand-text {
+    font-size: 20px; /* Increase the size of the brand text */
+}
+
+nav li{
+    padding-left: 5px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+/* Warna garis vertikal pada item sidebar aktif */
+.nav-sidebar .nav-link.active {
+    position: relative;
+    background-color: #343a40;
+    color: #ffffff !important;
+}
+
+.nav-sidebar .nav-link.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background-color: #1f88ff; /* Warna biru muda pastel */
+    border-radius: 2px;
+}
+.nav-pills .nav-link.active {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.user-panel img {
+    object-fit: cover;
+}
+
+.nav-icon {
+    margin-right: 8px;
+}
+
+.user-panel .info a {
+    font-size: 1.25rem; /* Increase Admin text size */
+    font-weight: bold; /* Bold font for Admin text */
+}
+
+.user-panel .info p {
+    font-size: 0.75rem; /* Smaller font for Modern Admin Panel */
+}
+
+.main-header {
+    background-color: #dcdcdc;
+}
+.sidebar-dark-primary {
+    background-color: #062c7f; /* Sidebar Color */
+}
+.content-wrapper {
+    background-color: #f9f9ff;
+    max-width: 100%;   /* Batasi lebar sesuai viewport */
+    padding: 10px;      /* Tambahkan padding agar rapi */
+    margin: 0 auto;     /* Tengah di layar besar */
+    overflow-x: hidden; /* Hilangkan scroll horizontal */
+}
+
+/* Tampilan tabel yang lebih kecil, dengan gaya elegan */
+.table {
+    font-size: 12px; /* Ukuran font lebih kecil */
+    width: 100%;
+    border-collapse: separate; /* Supaya border radius bisa diterapkan */
+    border-spacing: 0; /* Menghapus jarak antar sel */
+    background-color: #ffffff;
+    border-radius: 8px; /* Border radius untuk tampilan lebih lembut */
+    overflow: hidden; /* Menghindari elemen yang meluap */
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    padding: 8px 10px; /* Lebih kecil */
+    background-color: #f8f9fa; /* Warna header lebih lembut */
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Border di bawah header */
+}
+
+.table td {
+    padding: 6px 8px; /* Lebih kecil */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Border antar sel */
+    color: #555;
+    white-space: nowrap; /* Cegah teks meluap */
+}
+
+/* Warna alternatif untuk baris */
+.table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Hover pada baris */
+.table tr:hover {
+    background-color: #eaf6ff; /* Warna saat di-hover */
+    cursor: pointer;
+}
+
+/* Border radius pada header dan footer tabel */
+.table thead tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.table thead tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+/* Tampilan header pencarian */
+.d-flex {
+    font-size: 14px; /* Ukuran font lebih kecil */
+    margin-bottom: 10px; /* Jarak lebih kecil */
+}
+
+/* Input pencarian yang lebih ramping */
+.input-group {
+    width: 250px; /* Ukuran lebih kecil */
+}
+
+.input-group-text, .form-control {
+    font-size: 14px; /* Ukuran font lebih kecil */
+}
+
+/* Tampilan Card untuk Order */
+.menu-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+    height: 32px;
+}
+.password-container {
+    position: relative;
+}
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menu-col {
+        width: 25%; /* 4 kolom di desktop */
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-col {
+        width: 33.33%; /* 3 kolom di mobile */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .navbar-nav, .nav-sidebar {
+        flex-wrap: wrap; /* Agar tidak melebihi lebar layar */
+        justify-content: space-around; /* Elemen dibagi rata */
+    }
+
+    .table th, .table td {
+        font-size: 10px; /* Ukuran lebih kecil di layar kecil */
+        padding: 4px 6px;
+    }
+
+    .input-group {
+        width: 200px; /* Lebih kecil di mobile */
+    }
+    
+    /* Teks dan Elemen yang Terlalu Panjang */
+    p, h1, h2, h3, h4, h5, h6 {
+        word-break: break-word; /* Potong teks panjang agar tidak meluap */
+        white-space: normal; /* Izinkan teks turun ke bawah */
+    }
+    .table th, .table td {
+        font-size: 9px; /* Kecilkan font untuk mobile */
+        padding: 3px 5px; /* Kurangi padding */
+    }
+
+    .table button {
+        font-size: 9px; /* Kecilkan font untuk tombol */
+        padding: 1px 3px; /* Kurangi padding tombol */
+    }
+
+    h1 {
+        font-size: 24px; /* Sesuaikan ukuran judul */
+    }
+   
+}
