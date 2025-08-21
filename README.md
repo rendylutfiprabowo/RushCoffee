@@ -1,7 +1,3 @@
-Tentu! Saya buatkan versi README Anda dengan **ikon dan simbol** agar lebih menarik dan mudah dibaca. Simbol ini menggunakan emoji yang relevan untuk tiap bagian/subjudul:
-
----
-
 # ☕ Rush Coffee Web Application
 
 A web application that assists cashiers and admins in recording sales and monitoring daily transactions at **Rush Coffee**.
@@ -88,9 +84,4 @@ GitHub: [github.com/rendylutfiprabowo](https://github.com/rendylutfiprabowo)
 ## 📜 License
 
 This project is free to use and modify as needed.
-
 ---
-
-Kalau mau, saya bisa buat versi **lebih “GitHub ready”** dengan **screenshot tampilan aplikasi** dan emoji yang sama, sehingga README langsung terlihat interaktif saat dibuka.
-
-Apakah mau saya buat versi itu juga?
