@@ -23,8 +23,8 @@ A web application that assists cashiers and admins in recording sales and monito
 
 ## ⚙️ Installation
 
-1. 📦 Unzip `node_modules.zip`.
-2. 📂 Move the `node_modules` folder into `/RushCoffee`.
+1. 📦 Unzip `node_modules.zip` and `public.zip`. 
+2. 📂 Move the `node_modules` folder into `/RushCoffee` and Move the `public` folder into `/RushCoffee`.
 3. 🧩 Run `composer install`.
 4. ⚙️ Configure the `.env` file according to your environment.
 5. 🔑 Generate the application key:
